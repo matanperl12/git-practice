@@ -1,6 +1,6 @@
-name: Hello World
+name: Welcome Action
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   greet:
@@ -15,6 +15,12 @@ jobs:
 
       - name: Print system info
         run: uname -a
+
+      - name: envairoment variables printing
+        run:  echo "the enviroment is: $env"
+
+      - name: Disk space check
+        run: df -h
 
       - name: List files
         run: ls -la
