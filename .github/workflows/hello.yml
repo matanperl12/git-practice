@@ -18,7 +18,7 @@ jobs:
         run: uname -a
 
       - name: environment variables printing
-        run:  echo "the enviroment is: ${{ vars.env }}"
+        run: echo "the enviroment is: ${{ vars.env }}"
 
       - name: Disk space check
         run: df -h
