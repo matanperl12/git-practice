@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   greet:
     runs-on: ubuntu-latest
-    enviroment: env
+    environment: env
 
     steps:
       - name: Print greeting
@@ -17,7 +17,7 @@ jobs:
       - name: Print system info
         run: uname -a
 
-      - name: enviroment variables printing
+      - name: environment variables printing
         run:  echo "the enviroment is: ${{ vars.env }}"
 
       - name: Disk space check
